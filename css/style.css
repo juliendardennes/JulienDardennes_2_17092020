@@ -1,0 +1,548 @@
+/*--------------en-tête--------------*/
+body {
+    font-family: 'Raleway', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.logo {
+    width: 110px ;
+    height: 50px;
+}
+/*----------------menu ------------------*/
+.inscription {
+    color: #0065fc;
+    margin-left: 2.5em;
+    font-size: 1em;
+    font-style: bold;
+} 
+.menuhebergements,
+.menuactivites {
+    margin-left: 2.5em;
+    font-size: 1em;
+}
+.menuhebergements:hover,
+.menuactivites:hover {
+    border-top: 3px solid #0065fc;
+    padding-top: 1em ;
+    color: #0065fc;
+}
+.menu {
+    float: right;     
+    list-style-type: none;
+    display: flex;
+}
+/*-----------------barre de recherche---------*/
+form {
+    margin-bottom: 30px;
+}
+form button {
+    display: none;
+}
+#localisation {
+    height: 50px;
+    width: 300px;
+    margin-right: 0;
+    padding-right: 0;
+    border: 1px solid #F2F2F2;
+    font-size: 1.2em;
+}
+.btn {
+    background-color:  #0065FC;
+    color: white;
+    height: 50px;
+    width: 140px;
+    margin-left: 0;
+    padding-left: 0;
+    border: transparent;
+    border-radius: 0 15px 15px 0;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.gps {
+    padding: 16px 20px 15px 20px;
+    background-color: #F2F2F2;
+    border-radius: 15px 0 0 15px;
+}
+/*---------------------filtres---------------------*/
+.filtres-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.filtres a {
+    margin-left: 1em;
+}
+.filtres-container h2 {
+    margin: 30px 15px 3px 0;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.filtres {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.filtres li /*texte dans les filtres*/ {
+    border: 1px #d7d7d8 solid;
+    padding: 10px 25px 8px 0px;
+    border-radius: 50px;
+    margin: 10px 20px 0 0 ;
+    font-size: 16px;
+}
+.filtres li:hover /*survol des filtres*/ {
+    background-color: #deebff;
+}
+.fa-money-bill-wave,
+.fa-child,
+.fa-heart,
+.fa-dog /*icones des filtres*/{
+    height: 15px;
+    background-color: #d6e7ff;
+    color: #0065fc;
+    border: 1px solid #d6e7ff;
+    border-radius: 50%;
+    display: inline; 
+    padding: 10px 10px;
+}        
+/*-----------------phrase d'information ----------------*/
+#info {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+}
+#info p {
+    font-size: 1.1em;
+    margin-left: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#info i {
+    color: #0065FC;
+    font-size: medium;
+    border: 2px solid #F2F2F2;
+    padding: 5px 10px;
+    border-radius: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+/*------block hebergements+populaires-----*/
+article {
+    display: flex;
+    justify-content: space-around;
+}
+.fa-star {
+    color: #0065fc;
+}
+.gris {
+    color: #d9d9d9;
+}
+/*-----------hebergements-----------*/
+#hebergements {
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    width: 65%;
+}
+.vignetteshotel {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 30px;
+}
+.aubergelacannebiere,
+.port, 
+.lesmouettes, 
+.hoteldelamer, 
+.aubergelepanier, 
+.hotelamina {
+    border: 5px solid white;
+    border-radius: 20px 20px 20px 20px ;
+    box-shadow: 0 0 20px #0000002e;
+    background-color: white;
+    margin: 10px;
+    width: 240px;
+}
+.aubergelacannebiere:hover,
+.port:hover, 
+.lesmouettes:hover, 
+.hoteldelamer:hover, 
+.aubergelepanier:hover, 
+.hotelamina:hover {
+    transform: scale(1.05);
+}
+#hebergements h2 {
+    margin: 30px;
+}
+#hebergements img {
+    width: 240px;
+    height: 110px;
+    border-radius: 20px 20px 0 0;
+}
+#hebergements p {
+    font-size: 0.8em;
+    margin-top: 0.1em;
+    margin-bottom: 0.4em;
+}
+#hebergements h3 {
+font-size: 1em;
+margin-top: 3px;
+margin-bottom: 0.4em;
+}
+#hebergements h4 {
+font-size: 1.2em;
+margin-left: 2em;
+}
+/*------------------populaires--------------*/
+.contenairepopulaires {
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    width: 30%;
+}
+#titrepopulaires {
+    display:flex;
+    justify-content: space-between;
+}
+#titrepopulaires h2 {
+    margin: 30px;
+}
+#titrepopulaires i {
+    margin: 40px;
+    font-size: 1.3em;
+}
+.populaires {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.soleilmatin, 
+.coeureau, 
+.bleublanc {
+    border: 5px solid white;
+    border-radius: 20px 20px 20px 20px ;
+    height: 120px;
+    width: 20em;
+    background-color: white;
+    margin: 10px;
+    display: flex;
+}
+.soleilmatin:hover,
+.coeureau:hover,
+.bleublanc:hover {
+    transform: scale(1.05);
+}
+.populaires img {
+    width: 120px;
+    height: 120px;
+    border-radius: 20px 0px 0 20px;
+    object-fit: cover;
+}
+.hotel {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.hotel h3 /*nom des hotels*/ {
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-size: 1em;
+}
+.hotel p {
+    font-size: 0.8em;
+    margin-left: 0.6em;
+}
+.populaires .fa-star {
+    padding-top: 0.7em;
+}
+/*-------------activites---------------*/
+
+#activites h2 {
+    grid-column: 1/-1;
+}
+.contenaireactivites {
+    display: grid;
+    column-gap: 2em;
+    margin-top: 1.8em;
+}
+.carteactivites {
+    box-shadow: 0 0 20px #0000002e;
+    border-radius: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.carteactivites:hover {
+    transform: scale(1.05);
+}
+.imageactivites {
+    position: relative;
+    flex: 1;
+}
+#activites img {
+    border-radius: 15px 15px 0 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#activites h3 {
+    margin:10px 0 10px 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+.vieuxport {
+    grid-column: 1/2;
+    grid-row: 2/7;
+    height:400px;
+    width: 300px;
+}
+.pomegues {
+    grid-column: 2/3;
+    grid-row: 2/5;
+    height:200px;
+    width: 300px;
+}
+.ilesfrioul {
+    grid-column: 2/3;
+    grid-row: 6/7;
+    height:150px;
+    width: 300px;
+}
+.calanques {
+    grid-column: 3/4;
+    grid-row: 2/7;
+    height:400px;
+    width: 300px;
+}
+.notredame {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    height:150px;
+    width: 300px;
+}
+.longchamp {
+    grid-column: 4/5;
+    grid-row: 4/7;
+    height:200px;
+    width: 300px;
+}
+/*----------------pied de page------------*/
+.pieddepage {
+    display: flex;
+    width: 100%; 
+    padding: 0 18px;
+}
+.lien {
+    display: block;
+    margin: 10px 0;
+}
+.colonne {
+    width: 30%;
+    padding: 20px 20px;
+}
+.colonne a {
+    font-size: 0.9em;
+}
+footer {
+    background-color: #f2f2f2;
+    width: 100%;
+    margin-top: 50px;
+}
+.colonne .lien:hover {
+    color: #0065fc;
+}
+/*------------------------------------------------*/
+/*----------------responsive----------------------*/
+/*-----------------tablette----------------------*/
+/*-----------------------------------------------*/
+
+@media screen and (min-width: 900px) and (max-width: 1024px) {
+    /*----------populaires--------*/
+    .soleilmatin, 
+    .coeureau, 
+    .bleublanc {
+        border: 5px solid white;
+        border-radius: 20px 20px 20px 20px ;
+        width: 70%;
+        height: 70%;
+        background-color: white;
+        margin: 10px;
+        flex-direction: column;
+    }
+    .populaires img {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+    /*-----------activites-----------*/
+    .contenaireactivites {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .carteactivites {
+        margin-bottom: 20px;
+        margin-left: 1em;
+        width: 280px;
+        height: 160px;
+    }
+    #activites h2 {
+        margin-left: 1em;
+    }
+    #activites h3 {
+        margin-left: 20px;
+    }
+}
+/*-------------------------------------------------*/
+/*-----------------responsive----------------------*/
+/*------------------mobile--------------------------*/
+/*--------------------------------------------------*/
+
+@media screen and (max-width: 899px) {
+    /*-----------------menus---------------------*/
+    .menuhebergements:hover,
+    .menuactivites:hover {
+        border-bottom: 3px solid #0065fc;
+        padding-bottom: 10px;
+        border-top: none;
+    }
+    .menuhebergements  {
+        border-bottom: 3px solid #f2f2f2;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 40px;
+        margin-left: 1px;
+    }
+    .menuactivites {
+        border-bottom: 3px solid #f2f2f2;
+        padding-bottom: 10px;
+        padding-left: 50px;
+        padding-right: 60px;
+        margin-left: 1px;
+    }
+    .menu {
+        list-style-type: none;
+        display: flex;
+        float: none;
+        padding-left: 1px;
+        padding-right: 900px;
+    }
+    .inscription {
+        position: absolute;
+        top: 15px;
+        right: 40px;
+    }
+    /*-----------recherche de localisation---------*/
+    form button {
+        display: inline;
+        background-color:  #0065FC;
+        color: white;
+        height: 50px;
+        width: 50px;
+        border: none;
+        border-radius: 15px 15px 15px 15px;
+        font-size: 1.2em;
+    }
+    form .btn {
+        display: none;
+    }
+    #localisation {
+        width: 70%;
+        border: 1px solid red;
+    }
+    /*-------------H1 et filtres-------------*/
+    h1 {
+        margin-top: 2em;
+    }
+    .filtres-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .filtres-container h2 {
+        margin: 7px 0px -5px 5px;
+    }
+    /*---------------populaires------------*/
+    article {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .contenairepopulaires {
+        background-color: #efefef;
+        width: 100%;
+        border-radius: 0px;
+    }
+    #populaires h2 {
+        margin-left: 0.5em;
+    }
+    .hotel p {
+        margin-left: 1px;
+        margin-top: 1px;
+    }
+    .soleilmatin, 
+    .coeureau, 
+    .bleublanc {
+        height: 120px;
+        width: 300px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    .fa-chart-line {
+        margin-right: 20px;
+    }
+    /*----------------hebergements--------------*/
+    #hebergements {
+        width: 100%;
+        background: none;
+    }
+    .aubergelacannebiere,
+    .port, 
+    .lesmouettes, 
+    .hoteldelamer, 
+    .aubergelepanier, 
+    .hotelamina {
+        margin-left: 1px;
+        margin-bottom: 20px;
+        width: auto;
+    }
+    #hebergements h2 {
+        margin-left: 15px;
+    }
+    #hebergements img {
+        width: 320px;
+        height: 140px;
+    }
+    /*----------etoile---------*/
+   .fa-star {
+        color: #0065fc;
+    }
+    .gris {
+        color: grey;
+    }
+    /*------------activites------------------*/
+    .contenaireactivites {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .carteactivites {
+        margin-bottom: 20px;
+        margin-left: 1em;
+        width: 320px;
+        height: 200px;
+    }
+    #activites h2 {
+        margin-left: 1em;
+    }
+    #activites h3 {
+        margin-left: 20px;
+    }
+    /*---------------pied de la page ------------*/
+    .pieddepage  {
+        display: flex;
+        flex-direction: column;
+    }
+    .colonne {
+        width: 20em;
+    }
+}     
