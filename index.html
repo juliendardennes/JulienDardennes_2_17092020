@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
    <head>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
    </head>
    <body>
       <header>
-         <img src="images/reservia.svg" href="index.html" alt="logo du site" class="logo" />
+         <img src="images/reservia.svg" alt="logo du site" class="logo" />
          <ul class="menu">   
             <li><a class="menuhebergements" href="#hebergements" title="hebergements">Hébergements</a></li>
             <li><a class="menuactivites" href="#activites" title="activites">Activités</a></li>
@@ -22,28 +22,28 @@
          <p>En plein centre ville ou en pleine nature</p>
          <div id="recherche">
             <form>
-               <label for="localisation" class="gps"><i class="fas fa-map-marker-alt"></i></label><input type="search" name="localisation" id="localisation" /><input type="button" class="btn" value="Rechercher" /><button name="bouton"><i class="fas fa-search"></i></button>
+               <label for="localisation" class="gps"><i class="fas fa-map-marker-alt"></i></label><input type="search" name="localisation" id="localisation" placeholder="Marseille, France" /><input type="button" class="btn" value="Rechercher" /><button name="bouton"><i class="fas fa-search"></i></button>
             </form>
          </div>
          <div class="filtres-container">
             <h2>Filtres</h2>
-            <div class="filtres">
+            <ul class="filtres">
                <li><i class="fas fa-money-bill-wave"></i><a href="#">Economique</a></li>
                <li><i class="fas fa-child"></i><a href="#">Familial</a></li>
                <li><i class="fas fa-heart"></i><a href="#">Romantique</a></li>
                <li><i class="fas fa-dog"></i><a href="#">Animaux Autorisés</a></li>
-            </div> 
+            </ul> 
          </div>
          <div id="info">
             <i class="fas fa-info"></i><p>Plus de 500 logements sont disponibles dans cette ville </p>
-      </div>
+         </div>
       </section>
       <article>     
          <div id="hebergements">
             <h2>Hébergements à Marseille</h2>
             <div class="vignetteshotel">
                <div class="aubergelacannebiere">
-                  <a href="#"><img class="cannebiere" src="images/aubergelacannebiere.jpg">
+                  <a href="#"><img class="cannebiere" alt="photo cannebiere" src="images/aubergelacannebiere.jpg">
                      <h3>Auberge La Cannebière</h3>
                      <p>Nuit à partir de 25€</p>
                      <p>
@@ -56,7 +56,7 @@
                   </a>
                </div>
                <div class="port">
-                  <a href="#"><img class="hotelduport" src="images/hotelduport.jpg">
+                  <a href="#"><img class="hotelduport" alt="photo du port" src="images/hotelduport.jpg">
                      <h3>Hôtel du port</h3>
                      <p>Nuit à partir de 52€</p>
                      <p>
@@ -69,7 +69,7 @@
                   </a>
                </div>
                <div class="lesmouettes">
-                  <a href="#"><img class="hotellesmouettes" src="images/hotellesmouettes.jpg">
+                  <a href="#"><img class="hotellesmouettes" alt="photo des mouettes" src="images/hotellesmouettes.jpg">
                      <h3>Hôtel Les mouettes</h3>
                      <p>Nuit à partir de 76€</p>
                      <p>
@@ -82,7 +82,7 @@
                   </a>
                </div>
                <div class="hoteldelamer">
-                  <a href="#"><img class="lamer" src="images/hoteldelamer.jpg">
+                  <a href="#"><img class="lamer" alt="photo de la mer" src="images/hoteldelamer.jpg">
                      <h3>Hôtel de la mer</h3>
                      <p>Nuit à partir de 46€</p>
                      <p>
@@ -91,10 +91,11 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star gris"></i>
                         <i class="fas fa-star gris"></i>
+                     </p>
                   </a>
                </div>
                <div class="aubergelepanier">    
-                  <a href="#"><img class="lepanier" src="images/aubergelepanier.jpg">
+                  <a href="#"><img class="lepanier" alt="photo du panier" src="images/aubergelepanier.jpg">
                      <h3>Auberge Le Panier</h3>
                      <p>Nuit à partir de 23€</p>
                      <p>
@@ -107,7 +108,7 @@
                   </a>
                </div>
                <div class="hotelamina">    
-                  <a href="#"><img class="Chezamina" src="images/hotelchezamina.jpg">
+                  <a href="#"><img class="Chezamina" alt="photo hotel amina" src="images/hotelchezamina.jpg">
                      <h3>Hôtel chez Amina</h3>
                      <p>Nuit à partir de 96€</p>
                      <p>
@@ -129,7 +130,7 @@
             </div>
             <div class="populaires">
                <div class="soleilmatin">
-                  <a href="#"><img class="hotelsoleil" src="images/lesoleildumatin.jpg">
+                  <a href="#"><img class="hotelsoleil" alt="hotel le soleil du matin" src="images/lesoleildumatin.jpg">
                   </a>
                   <div class="hotel">
                      <h3>Hôtel le soleil du matin</h3>
@@ -144,7 +145,7 @@
                   </div>
                </div>
                <div class="coeureau">
-                  <a href="#"><img class="coeurdeleau" src="images/coeurdeleau.jpg">
+                  <a href="#"><img class="coeurdeleau" alt="chambres d'hotes" src="images/coeurdeleau.jpg">
                   </a>
                   <div class="hotel">
                      <h3>Au coeur de l'eau Chambres d'Hôtes</h3>
@@ -159,7 +160,7 @@
                   </div>
                </div>
                <div class="bleublanc">
-                  <a href="#"><img class="bleuetblanc" src="images/bleuetblanc.jpg">
+                  <a href="#"><img class="bleuetblanc" alt="hotel bleu et blanc" src="images/bleuetblanc.jpg">
                   </a>
                   <div class="hotel">
                      <h3>Hôtel Tout bleu et blanc</h3>

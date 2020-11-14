@@ -46,7 +46,16 @@ form button {
     margin-right: 0;
     padding-right: 0;
     border: 1px solid #F2F2F2;
+    border-right: transparent;
+    border-left: transparent;
+    outline: transparent;
     font-size: 1.2em;
+}
+#localisation::placeholder {
+    color: black;
+    padding: 15px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
 }
 .btn {
     background-color:  #0065FC;
@@ -181,6 +190,7 @@ article {
     width: 240px;
     height: 110px;
     border-radius: 20px 20px 0 0;
+    object-fit: cover;
 }
 #hebergements p {
     font-size: 0.8em;
@@ -188,13 +198,13 @@ article {
     margin-bottom: 0.4em;
 }
 #hebergements h3 {
-font-size: 1em;
-margin-top: 3px;
-margin-bottom: 0.4em;
+    font-size: 1em;
+    margin-top: 3px;
+    margin-bottom: 0.4em;
 }
 #hebergements h4 {
-font-size: 1.2em;
-margin-left: 2em;
+    font-size: 1.2em;
+    margin-left: 2em;
 }
 /*------------------populaires--------------*/
 .contenairepopulaires {
@@ -400,7 +410,7 @@ footer {
 /*------------------mobile--------------------------*/
 /*--------------------------------------------------*/
 
-@media screen and (max-width: 899px) {
+@media screen and (max-width: 480px) {
     /*-----------------menus---------------------*/
     .menuhebergements:hover,
     .menuactivites:hover {
@@ -427,7 +437,6 @@ footer {
         display: flex;
         float: none;
         padding-left: 1px;
-        padding-right: 900px;
     }
     .inscription {
         position: absolute;
@@ -435,8 +444,9 @@ footer {
         right: 40px;
     }
     /*-----------recherche de localisation---------*/
+    
     form button {
-        display: inline;
+        display: inline-block;
         background-color:  #0065FC;
         color: white;
         height: 50px;
@@ -444,13 +454,15 @@ footer {
         border: none;
         border-radius: 15px 15px 15px 15px;
         font-size: 1.2em;
+        position: relative;
+        right: 1em;
     }
     form .btn {
         display: none;
     }
     #localisation {
-        width: 70%;
-        border: 1px solid red;
+        width: 65%;
+        border: 1px solid #F2F2F2;
     }
     /*-------------H1 et filtres-------------*/
     h1 {
@@ -462,6 +474,9 @@ footer {
     }
     .filtres-container h2 {
         margin: 7px 0px -5px 5px;
+    }
+    .filtres {
+        padding-left: 10px;
     }
     /*---------------populaires------------*/
     article {
