@@ -1,4 +1,4 @@
-/*--------------en-tête--------------*/
+/*----------en-tête-----------*/
 body {
     font-family: 'Raleway', sans-serif;
 }
@@ -10,7 +10,7 @@ a {
     width: 110px ;
     height: 50px;
 }
-/*----------------menu ------------------*/
+/*-------------menu -------------*/
 .inscription {
     color: #0065fc;
     margin-left: 2.5em;
@@ -33,7 +33,7 @@ a {
     list-style-type: none;
     display: flex;
 }
-/*-----------------barre de recherche---------*/
+/*---------barre de recherche---------*/
 form {
     margin-bottom: 30px;
 }
@@ -74,7 +74,7 @@ form button {
     background-color: #F2F2F2;
     border-radius: 15px 0 0 15px;
 }
-/*---------------------filtres---------------------*/
+/*---------------filtres-------------*/
 .filtres-container {
     display: flex;
     flex-direction: row;
@@ -115,9 +115,9 @@ form button {
     border: 1px solid #d6e7ff;
     border-radius: 50%;
     display: inline; 
-    padding: 10px 10px;
+    padding: 10px;
 }        
-/*-----------------phrase d'information ----------------*/
+/*--------phrase d'information ------------*/
 #info {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -149,7 +149,7 @@ article {
 .gris {
     color: #d9d9d9;
 }
-/*-----------hebergements-----------*/
+/*-----hebergements-------*/
 #hebergements {
     background-color: #F2F2F2;
     border-radius: 15px;
@@ -175,14 +175,6 @@ article {
     margin: 10px;
     width: 240px;
 }
-.aubergelacannebiere:hover,
-.port:hover, 
-.lesmouettes:hover, 
-.hoteldelamer:hover, 
-.aubergelepanier:hover, 
-.hotelamina:hover {
-    transform: scale(1.05);
-}
 #hebergements h2 {
     margin: 30px;
 }
@@ -206,7 +198,7 @@ article {
     font-size: 1.2em;
     margin-left: 2em;
 }
-/*------------------populaires--------------*/
+/*----------populaires-----------*/
 .contenairepopulaires {
     background-color: #F2F2F2;
     border-radius: 15px;
@@ -240,11 +232,6 @@ article {
     margin: 10px;
     display: flex;
 }
-.soleilmatin:hover,
-.coeureau:hover,
-.bleublanc:hover {
-    transform: scale(1.05);
-}
 .populaires img {
     width: 120px;
     height: 120px;
@@ -267,7 +254,7 @@ article {
 .populaires .fa-star {
     padding-top: 0.7em;
 }
-/*-------------activites---------------*/
+/*---------activites----------*/
 
 #activites h2 {
     grid-column: 1/-1;
@@ -283,9 +270,6 @@ article {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-}
-.carteactivites:hover {
-    transform: scale(1.05);
 }
 .imageactivites {
     position: relative;
@@ -340,7 +324,7 @@ article {
     height:200px;
     width: 300px;
 }
-/*----------------pied de page------------*/
+/*---------pied de page------------*/
 .pieddepage {
     display: flex;
     width: 100%; 
@@ -443,7 +427,7 @@ footer {
         top: 15px;
         right: 40px;
     }
-    /*-----------recherche de localisation---------*/
+    /*-----recherche de localisation---------*/
     
     form button {
         display: inline-block;
@@ -464,7 +448,7 @@ footer {
         width: 65%;
         border: 1px solid #F2F2F2;
     }
-    /*-------------H1 et filtres-------------*/
+    /*-------H1 et filtres-------------*/
     h1 {
         margin-top: 2em;
     }
@@ -478,7 +462,7 @@ footer {
     .filtres {
         padding-left: 10px;
     }
-    /*---------------populaires------------*/
+    /*--------populaires---------*/
     article {
         display: flex;
         flex-wrap: wrap-reverse;
@@ -506,7 +490,7 @@ footer {
     .fa-chart-line {
         margin-right: 20px;
     }
-    /*----------------hebergements--------------*/
+    /*---------hebergements--------*/
     #hebergements {
         width: 100%;
         background: none;
@@ -535,7 +519,7 @@ footer {
     .gris {
         color: grey;
     }
-    /*------------activites------------------*/
+    /*-------activites-----------*/
     .contenaireactivites {
         display: flex;
         flex-wrap: wrap;
@@ -552,7 +536,7 @@ footer {
     #activites h3 {
         margin-left: 20px;
     }
-    /*---------------pied de la page ------------*/
+    /*-------pied de la page -------*/
     .pieddepage  {
         display: flex;
         flex-direction: column;
