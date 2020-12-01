@@ -15,7 +15,6 @@ a {
     color: #0065fc;
     margin-left: 2.5em;
     font-size: 1em;
-    font-style: bold;
 } 
 .menu-hebergements,
 .menu-activites {
@@ -81,11 +80,11 @@ form button {
     margin-top: 10px;
 }
 .filtres a {
-    margin-left: 1em;
+    margin-left: 16px;
 }
 .filtres-container h2 {
     margin: 30px 15px 3px 0;
-    font-size: 20px;
+    font-size: 1.2em;
     display: flex;
     flex-wrap: wrap;
 }
@@ -100,21 +99,17 @@ form button {
     padding: 10px 25px 8px 0px;
     border-radius: 50px;
     margin: 10px 20px 0 0 ;
-    font-size: 16px;
+    /*font-size: 16px;*/
 }
 .filtres li:hover /*survol des filtres*/ {
     background-color: #deebff;
 }
-.fa-money-bill-wave,
-.fa-child,
-.fa-heart,
-.fa-dog /*icones des filtres*/{
-    height: 15px;
+.filtres i /*icones des filtres*/ {
     background-color: #d6e7ff;
     color: #0065fc;
     border: 1px solid #d6e7ff;
-    border-radius: 50%;
-    display: inline; 
+    border-radius: 50%; 
+    display: inline;
     padding: 10px;
 }        
 /*--------phrase d'information ------------*/
@@ -126,12 +121,9 @@ form button {
 #info p {
     font-size: 1.1em;
     margin-left: 10px;
-    margin-top: auto;
-    margin-bottom: auto;
 }
 #info i {
     color: #0065FC;
-    font-size: medium;
     border: 2px solid #F2F2F2;
     padding: 5px 10px;
     border-radius: 30px;
@@ -181,8 +173,8 @@ article {
 }
 .vignettes-hotel p {
     font-size: 0.8em;
-    margin-top: 0.1em;
-    margin-bottom: 0.4em;
+    margin-top: 6px;
+    margin-bottom: 8px;
 }
 .vignettes-hotel h3 {
     font-size: 1em;
@@ -191,7 +183,7 @@ article {
 }
 #hebergements h4 {
     font-size: 1.2em;
-    margin-left: 2em;
+    margin-left: 30px;
 }
 /*----------populaires-----------*/
 #contenaire-populaires {
@@ -216,9 +208,7 @@ article {
     justify-content: center;
     align-items: center;
 }
-.soleil-matin, 
-.coeur-eau, 
-.bleu-blanc {
+.hotel {
     border: 5px solid white;
     border-radius: 20px 20px 20px 20px ;
     height: 120px;
@@ -233,18 +223,18 @@ article {
     border-radius: 20px 0px 0 20px;
     object-fit: cover;
 }
-.hotel {
+.description-hotel {
     margin-left: 20px;
     margin-right: 20px;
 }
-.hotel h3 /*nom des hotels*/ {
-    margin-bottom: 0;
+.description-hotel h3 /*nom des hotels*/ {
     margin-top: 10px;
     font-size: 1em;
 }
-.hotel p {
+.description-hotel p {
     font-size: 0.8em;
-    margin-left: 0.6em;
+    margin-top: -10px;
+    margin-bottom: 30px;
 }
 .hotels-populaires .fa-star {
     padding-top: 0.7em;
@@ -256,12 +246,12 @@ article {
 }
 .contenaire-activites {
     display: grid;
-    column-gap: 2em;
-    margin-top: 1.8em;
+    column-gap: 30px;
+    margin-top: 25px;
 }
 .carte-activites {
     box-shadow: 0 0 20px #0000002e;
-    border-radius: 1em;
+    border-radius: 15px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -341,9 +331,6 @@ footer {
     width: 100%;
     margin-top: 50px;
 }
-.colonne .lien:hover {
-    color: #0065fc;
-}
 /*------------------------------------------------*/
 /*----------------responsive----------------------*/
 /*-----------------tablette----------------------*/
@@ -351,9 +338,7 @@ footer {
 
 @media screen and (min-width: 481px) and (max-width: 1024px) {
     /*----------populaires--------*/
-    .soleil-matin, 
-    .coeur-eau, 
-    .bleu-blanc {
+    .hotel {
         border: 5px solid white;
         border-radius: 20px 20px 20px 20px ;
         width: 70%;
@@ -470,13 +455,10 @@ footer {
     .titre-populaires h2 {
         margin-left: 0.5em;
     }
-    .hotel p {
-        margin-left: 1px;
-        margin-top: 1px;
+    .description-hotel p {
+        margin-bottom: 20px;
     }
-    .soleil-matin, 
-    .coeur-eau, 
-    .bleu-blanc {
+    .hotel {
         height: 120px;
         width: 300px;
         margin-left: 20px;
