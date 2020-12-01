@@ -1,4 +1,4 @@
-/*--------------en-tête--------------*/
+/*----------en-tête-----------*/
 body {
     font-family: 'Raleway', sans-serif;
 }
@@ -10,20 +10,19 @@ a {
     width: 110px ;
     height: 50px;
 }
-/*----------------menu ------------------*/
+/*-------------menu -------------*/
 .inscription {
     color: #0065fc;
     margin-left: 2.5em;
     font-size: 1em;
-    font-style: bold;
 } 
-.menuhebergements,
-.menuactivites {
+.menu-hebergements,
+.menu-activites {
     margin-left: 2.5em;
     font-size: 1em;
 }
-.menuhebergements:hover,
-.menuactivites:hover {
+.menu-hebergements:hover,
+.menu-activites:hover {
     border-top: 3px solid #0065fc;
     padding-top: 1em ;
     color: #0065fc;
@@ -33,7 +32,7 @@ a {
     list-style-type: none;
     display: flex;
 }
-/*-----------------barre de recherche---------*/
+/*---------barre de recherche---------*/
 form {
     margin-bottom: 30px;
 }
@@ -74,18 +73,18 @@ form button {
     background-color: #F2F2F2;
     border-radius: 15px 0 0 15px;
 }
-/*---------------------filtres---------------------*/
+/*---------------filtres-------------*/
 .filtres-container {
     display: flex;
     flex-direction: row;
     margin-top: 10px;
 }
 .filtres a {
-    margin-left: 1em;
+    margin-left: 16px;
 }
 .filtres-container h2 {
     margin: 30px 15px 3px 0;
-    font-size: 20px;
+    font-size: 1.2em;
     display: flex;
     flex-wrap: wrap;
 }
@@ -100,24 +99,20 @@ form button {
     padding: 10px 25px 8px 0px;
     border-radius: 50px;
     margin: 10px 20px 0 0 ;
-    font-size: 16px;
+    /*font-size: 16px;*/
 }
 .filtres li:hover /*survol des filtres*/ {
     background-color: #deebff;
 }
-.fa-money-bill-wave,
-.fa-child,
-.fa-heart,
-.fa-dog /*icones des filtres*/{
-    height: 15px;
+.filtres i /*icones des filtres*/ {
     background-color: #d6e7ff;
     color: #0065fc;
     border: 1px solid #d6e7ff;
-    border-radius: 50%;
-    display: inline; 
-    padding: 10px 10px;
+    border-radius: 50%; 
+    display: inline;
+    padding: 10px;
 }        
-/*-----------------phrase d'information ----------------*/
+/*--------phrase d'information ------------*/
 #info {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -126,12 +121,9 @@ form button {
 #info p {
     font-size: 1.1em;
     margin-left: 10px;
-    margin-top: auto;
-    margin-bottom: auto;
 }
 #info i {
     color: #0065FC;
-    font-size: medium;
     border: 2px solid #F2F2F2;
     padding: 5px 10px;
     border-radius: 30px;
@@ -149,89 +141,74 @@ article {
 .gris {
     color: #d9d9d9;
 }
-/*-----------hebergements-----------*/
+/*-----hebergements-------*/
 #hebergements {
     background-color: #F2F2F2;
     border-radius: 15px;
     width: 65%;
 }
-.vignetteshotel {
+#hebergements h2 {
+    margin: 30px;
+}
+.vignettes-hotel {
     display: flex;
     flex-wrap: wrap;
     padding-left: 20px;
     padding-right: 20px;
     margin-top: 30px;
 }
-.aubergelacannebiere,
-.port, 
-.lesmouettes, 
-.hoteldelamer, 
-.aubergelepanier, 
-.hotelamina {
+.vignettes-hotel div {
     border: 5px solid white;
     border-radius: 20px 20px 20px 20px ;
     box-shadow: 0 0 20px #0000002e;
     background-color: white;
     margin: 10px;
-    width: 240px;
+    width: 29%;
 }
-.aubergelacannebiere:hover,
-.port:hover, 
-.lesmouettes:hover, 
-.hoteldelamer:hover, 
-.aubergelepanier:hover, 
-.hotelamina:hover {
-    transform: scale(1.05);
-}
-#hebergements h2 {
-    margin: 30px;
-}
-#hebergements img {
-    width: 240px;
+.vignettes-hotel img {
+    width: 100%;
     height: 110px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
 }
-#hebergements p {
+.vignettes-hotel p {
     font-size: 0.8em;
-    margin-top: 0.1em;
-    margin-bottom: 0.4em;
+    margin-top: 6px;
+    margin-bottom: 8px;
 }
-#hebergements h3 {
+.vignettes-hotel h3 {
     font-size: 1em;
     margin-top: 3px;
     margin-bottom: 0.4em;
 }
 #hebergements h4 {
     font-size: 1.2em;
-    margin-left: 2em;
+    margin-left: 30px;
 }
-/*------------------populaires--------------*/
-.contenairepopulaires {
+/*----------populaires-----------*/
+#contenaire-populaires {
     background-color: #F2F2F2;
     border-radius: 15px;
     width: 30%;
 }
-#titrepopulaires {
+.titre-populaires {
     display:flex;
     justify-content: space-between;
 }
-#titrepopulaires h2 {
-    margin: 30px;
+.titre-populaires h2 {
+    margin: 25px;
 }
-#titrepopulaires i {
+.titre-populaires i {
     margin: 40px;
     font-size: 1.3em;
 }
-.populaires {
+.hotels-populaires {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.soleilmatin, 
-.coeureau, 
-.bleublanc {
+.hotel {
     border: 5px solid white;
     border-radius: 20px 20px 20px 20px ;
     height: 120px;
@@ -240,54 +217,46 @@ article {
     margin: 10px;
     display: flex;
 }
-.soleilmatin:hover,
-.coeureau:hover,
-.bleublanc:hover {
-    transform: scale(1.05);
-}
-.populaires img {
+.hotels-populaires img {
     width: 120px;
     height: 120px;
     border-radius: 20px 0px 0 20px;
     object-fit: cover;
 }
-.hotel {
+.description-hotel {
     margin-left: 20px;
     margin-right: 20px;
 }
-.hotel h3 /*nom des hotels*/ {
-    margin-bottom: 0;
+.description-hotel h3 /*nom des hotels*/ {
     margin-top: 10px;
     font-size: 1em;
 }
-.hotel p {
+.description-hotel p {
     font-size: 0.8em;
-    margin-left: 0.6em;
+    margin-top: -10px;
+    margin-bottom: 30px;
 }
-.populaires .fa-star {
+.hotels-populaires .fa-star {
     padding-top: 0.7em;
 }
-/*-------------activites---------------*/
+/*---------activites----------*/
 
 #activites h2 {
     grid-column: 1/-1;
 }
-.contenaireactivites {
+.contenaire-activites {
     display: grid;
-    column-gap: 2em;
-    margin-top: 1.8em;
+    column-gap: 30px;
+    margin-top: 25px;
 }
-.carteactivites {
+.carte-activites {
     box-shadow: 0 0 20px #0000002e;
-    border-radius: 1em;
+    border-radius: 15px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
 }
-.carteactivites:hover {
-    transform: scale(1.05);
-}
-.imageactivites {
+.image-activites {
     position: relative;
     flex: 1;
 }
@@ -304,7 +273,7 @@ article {
     color: black;
     font-size: 15px;
 }
-.vieuxport {
+.vieux-port {
     grid-column: 1/2;
     grid-row: 2/7;
     height:400px;
@@ -316,7 +285,7 @@ article {
     height:200px;
     width: 300px;
 }
-.ilesfrioul {
+.iles-frioul {
     grid-column: 2/3;
     grid-row: 6/7;
     height:150px;
@@ -328,7 +297,7 @@ article {
     height:400px;
     width: 300px;
 }
-.notredame {
+.notre-dame {
     grid-column: 4/5;
     grid-row: 2/3;
     height:150px;
@@ -340,8 +309,8 @@ article {
     height:200px;
     width: 300px;
 }
-/*----------------pied de page------------*/
-.pieddepage {
+/*---------pied de page------------*/
+.pied-de-page {
     display: flex;
     width: 100%; 
     padding: 0 18px;
@@ -362,19 +331,14 @@ footer {
     width: 100%;
     margin-top: 50px;
 }
-.colonne .lien:hover {
-    color: #0065fc;
-}
 /*------------------------------------------------*/
 /*----------------responsive----------------------*/
 /*-----------------tablette----------------------*/
 /*-----------------------------------------------*/
 
-@media screen and (min-width: 900px) and (max-width: 1024px) {
+@media screen and (min-width: 481px) and (max-width: 1024px) {
     /*----------populaires--------*/
-    .soleilmatin, 
-    .coeureau, 
-    .bleublanc {
+    .hotel {
         border: 5px solid white;
         border-radius: 20px 20px 20px 20px ;
         width: 70%;
@@ -383,16 +347,16 @@ footer {
         margin: 10px;
         flex-direction: column;
     }
-    .populaires img {
+    .hotels-populaires img {
         width: 100%;
         border-radius: 20px 20px 0 0;
     }
     /*-----------activites-----------*/
-    .contenaireactivites {
+    .contenaire-activites {
         display: flex;
         flex-wrap: wrap;
     }
-    .carteactivites {
+    .carte-activites {
         margin-bottom: 20px;
         margin-left: 1em;
         width: 280px;
@@ -412,20 +376,20 @@ footer {
 
 @media screen and (max-width: 480px) {
     /*-----------------menus---------------------*/
-    .menuhebergements:hover,
-    .menuactivites:hover {
+    .menu-hebergements:hover,
+    .menu-activites:hover {
         border-bottom: 3px solid #0065fc;
         padding-bottom: 10px;
         border-top: none;
     }
-    .menuhebergements  {
+    .menu-hebergements  {
         border-bottom: 3px solid #f2f2f2;
         padding-bottom: 10px;
         padding-left: 20px;
         padding-right: 40px;
         margin-left: 1px;
     }
-    .menuactivites {
+    .menu-activites {
         border-bottom: 3px solid #f2f2f2;
         padding-bottom: 10px;
         padding-left: 50px;
@@ -443,7 +407,7 @@ footer {
         top: 15px;
         right: 40px;
     }
-    /*-----------recherche de localisation---------*/
+    /*-----recherche de localisation---------*/
     
     form button {
         display: inline-block;
@@ -464,7 +428,7 @@ footer {
         width: 65%;
         border: 1px solid #F2F2F2;
     }
-    /*-------------H1 et filtres-------------*/
+    /*-------H1 et filtres-------------*/
     h1 {
         margin-top: 2em;
     }
@@ -478,12 +442,12 @@ footer {
     .filtres {
         padding-left: 10px;
     }
-    /*---------------populaires------------*/
+    /*--------populaires---------*/
     article {
         display: flex;
         flex-wrap: wrap-reverse;
     }
-    .contenairepopulaires {
+    #contenaire-populaires {
         background-color: #efefef;
         width: 100%;
         border-radius: 0px;
@@ -491,13 +455,10 @@ footer {
     #populaires h2 {
         margin-left: 0.6em;
     }
-    .hotel p {
-        margin-left: 1px;
-        margin-top: 1px;
+    .description-hotel p {
+        margin-bottom: 20px;
     }
-    .soleilmatin, 
-    .coeureau, 
-    .bleublanc {
+    .hotel {
         height: 120px;
         width: 300px;
         margin-left: 20px;
@@ -506,17 +467,12 @@ footer {
     .fa-chart-line {
         margin-right: 20px;
     }
-    /*----------------hebergements--------------*/
+    /*---------hebergements--------*/
     #hebergements {
         width: 100%;
         background: none;
     }
-    .aubergelacannebiere,
-    .port, 
-    .lesmouettes, 
-    .hoteldelamer, 
-    .aubergelepanier, 
-    .hotelamina {
+    .vignettes-hotel div {
         margin-left: 1px;
         margin-bottom: 20px;
         width: auto;
@@ -535,12 +491,12 @@ footer {
     .gris {
         color: grey;
     }
-    /*------------activites------------------*/
-    .contenaireactivites {
+    /*-------activites-----------*/
+    .contenaire-activites {
         display: flex;
         flex-wrap: wrap;
     }
-    .carteactivites {
+    .carte-activites {
         margin-bottom: 20px;
         margin-left: 1em;
         width: 320px;
@@ -552,8 +508,8 @@ footer {
     #activites h3 {
         margin-left: 20px;
     }
-    /*---------------pied de la page ------------*/
-    .pieddepage  {
+    /*-------pied de la page -------*/
+    .pied-de-page  {
         display: flex;
         flex-direction: column;
     }
