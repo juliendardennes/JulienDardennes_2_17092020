@@ -333,7 +333,7 @@ footer {
 /*------------------------------------------------*/
 /*----------------responsive----------------------*/
 /*-----------------------------------------------*/
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1341px) {
     .contenaire-activites {
         display: flex;
         flex-wrap: wrap;
@@ -372,7 +372,7 @@ footer {
         margin-left: 20px;
     }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 630px) {
     /*-----------------menus---------------------*/
     .menu-hebergements:hover,
     .menu-activites:hover {
