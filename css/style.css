@@ -312,7 +312,6 @@ article {
 /*---------pied de page------------*/
 .pied-de-page {
     display: flex;
-    width: 100%; 
     padding: 0 18px;
 }
 .lien {
@@ -328,7 +327,6 @@ article {
 }
 footer {
     background-color: #f2f2f2;
-    width: 100%;
     margin-top: 50px;
 }
 /*------------------------------------------------*/
@@ -348,7 +346,6 @@ footer {
         flex-direction: column;
     }
     .hotels-populaires img {
-        width: 100%;
         border-radius: 20px 20px 0 0;
     }
     /*-----------activites-----------*/
@@ -512,8 +509,5 @@ footer {
     .pied-de-page  {
         display: flex;
         flex-direction: column;
-    }
-    .colonne {
-        width: 20em;
     }
 }     
